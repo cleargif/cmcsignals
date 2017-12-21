@@ -123,7 +123,7 @@ $(function() {
   }
 
 
-  $.get('https://api.coinmarketcap.com/v1/ticker/?limit=0', function(data) {
+  $.get('https://api.coinmarketcap.com/v1/ticker/?limit=100', function(data) {
     data.forEach(function(obj, id) {
       $('#hooked .grid').append(template(obj))
     })
