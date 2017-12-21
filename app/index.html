@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="container-fluid">
+
+    <h1>Isotope - filtering &amp; sorting</h1>
+    <h2>Filter</h2>
+ <!--    <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+      <button class="button" data-filter=".metal">metal</button>
+      <button class="button" data-filter=".rank">rank</button>
+      <button class="button" data-filter=".transition">transition</button>
+      <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+      <button class="button" data-filter=":not(.transition)">not transition</button>
+      <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+      <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+      <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+    </div> -->
+
+    <h2>Sort</h2>
+    <div id="sorts" class="button-group">  <button class="button is-checked" data-sort-by="original-order">original order</button>
+      <button class="button" data-sort-by="name">name</button>
+      <button class="button" data-sort-by="symbol">symbol</button>
+      <button class="button" data-sort-by="rank">rank</button>
+      <button class="button" data-sort-by="vol24h">vol24h</button>
+      <button class="button" data-sort-by="marketCap">marketCap</button>
+    </div>
+    <h3>Sort direction</h3>
+
+    <ul id="sort-direction" class="option-set clearfix" data-option-key="sortAscending">
+      <li><a href="#sortAscending=true" data-option-value="true">sort ascending</a></li>
+      <li><a href="#sortAscending=false" data-option-value="false">sort descending</a></li>
+    </ul>
+    <div class="row" id="hooked">
+      <div class="grid">
+        <!-- <div class="element-item transition metal " data-category="transition">
+          <h3 class="name">Mercury</h3>
+          <p class="symbol">Hg</p>
+          <p class="number">80</p>
+          <p class="weight">200.59</p>
+        </div>
+        <div class="element-item metalloid " data-category="metalloid">
+          <h3 class="name">Tellurium</h3>
+          <p class="symbol">Te</p>
+          <p class="number">52</p>
+          <p class="weight">127.6</p>
+        </div> -->
+    </div>
+  </div>
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/hello.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/bootstrap.js -->
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+    <!-- <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script> -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  </body>
+  </html>
